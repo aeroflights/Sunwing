@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Booking Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    /* Top orange header */
+    .topbar {
+      background: #ff6200;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .topbar .left img {
+      height: 40px;
+    }
+
+    .topbar .right {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #ff6200;
+      color: white;
+      display: flex;
+      padding: 10px 50px;
+      font-weight: bold;
+    }
+
+    .navbar div {
+      margin-right: 25px;
+      cursor: pointer;
+    }
+
+    .navbar div:hover {
+      text-decoration: underline;
+    }
+
+    /* Search section */
+    .searchbar {
+      background: #f7f7f7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      gap: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .searchbar input,
+    .searchbar select {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .searchbar button {
+      background: #004aad;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .searchbar button:hover {
+      background: #00337a;
+    }
+
+    /* Content section */
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+      gap: 40px;
+    }
+
+    .content-text {
+      max-width: 500px;
+    }
+
+    .content-text h1 {
+      font-size: 28px;
+      color: #444;
+    }
+
+    .content-text p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .content img {
+      width: 400px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top orange header -->
+  <div class="topbar">
+    <div class="left">
+      <img src="https://dummyimage.com/120x40/000/fff&text=LOGO" alt="Logo">
+    </div>
+    <div class="right">📦 Book Early = FREE Checked Bag</div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div>Packages</div>
+    <div>Flights</div>
+    <div>Current offers</div>
+    <div>Hotels</div>
+  </div>
+
+  <!-- Search Section -->
+  <div class="searchbar">
+    <label><input type="radio" name="trip" checked> Round trip</label>
+    <label><input type="radio" name="trip"> One way</label>
+    <select>
+      <option>Departing from</option>
+      <option>Toronto (YYZ)</option>
+    </select>
+    <select>
+      <option>Going to</option>
+    </select>
+    <input type="date" value="2025-09-05">
+    <input type="date" value="2025-09-12">
+    <select>
+      <option>2 Adults</option>
+      <option>1 Adult</option>
+      <option>3 Adults</option>
+    </select>
+    <button>Search</button>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content">
+    <div class="content-text">
+      <h1>NOTHING BUT SUNNY SKIES AHEAD!</h1>
+      <p>
+        Whether you're looking to head off on a long-weekend adventure or fly south for a weeklong sun and sand escape, we offer a range of flight deals from gateways across Canada to any one of our sun-soaked destinations in Mexico, Central America and across the Caribbean. The sky really is the limit when you book with us!
+      </p>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach">
+    </div>
+  </div>
+
+</body>
+</html>
