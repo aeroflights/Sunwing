@@ -3,180 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flight Booking Page</title>
+  <title>Sunwing Airlines</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #fff;
-      color: #333;
+      background-color: #f4f4f4;
     }
 
-    /* Top orange header */
-    .topbar {
-      background: #ff6200;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    header {
+      background-color: #ff6600;
       padding: 10px 20px;
     }
 
-    .topbar .left img {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav img {
       height: 40px;
     }
 
-    .topbar .right {
-      font-size: 14px;
-      font-weight: bold;
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
     }
 
-    /* Navbar */
-    .navbar {
-      background: #ff6200;
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
       color: white;
-      display: flex;
-      justify-content: center;   /* centers nav items */
-      padding: 10px 50px;
       font-weight: bold;
-    }
-
-    .navbar div {
-      margin: 0 20px;   /* equal spacing left & right */
-      cursor: pointer;
-      position: relative;
-    }
-
-    /* Fancy underline hover effect */
-    .navbar div::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -3px;
-      width: 0;
-      height: 2px;
-      background: white;
-      transition: width 0.3s ease;
-    }
-
-    .navbar div:hover::after {
-      width: 100%;
-    }
-
-    /* Search section */
-    .searchbar {
-      background: #f7f7f7;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 15px;
-      gap: 15px;
-      border-bottom: 1px solid #ddd;
-      flex-wrap: wrap; /* keeps it responsive */
-    }
-
-    .searchbar input,
-    .searchbar select {
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    .searchbar button {
-      background: #004aad;
-      color: white;
-      border: none;
-      padding: 10px 18px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .searchbar button:hover {
-      background: #00337a;
-    }
-
-    /* Content section */
-    .content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 50px;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .content-text {
-      max-width: 500px;
-    }
-
-    .content-text h1 {
-      font-size: 28px;
-      color: #444;
-    }
-
-    .content-text p {
       font-size: 16px;
-      line-height: 1.6;
+      transition: color 0.3s;
     }
 
-    .content img {
-      width: 400px;
-      border-radius: 10px;
+    nav ul li a:hover {
+      color: #ffe6cc;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-
-  <!-- Top orange header -->
-  <div class="topbar">
-    <div class="left">
+  <header>
+    <nav>
       <img src="https://assets.sunwingtravelgroup.com/image/upload/v1614627905/sunwing-prod/Web%20Replatform%20Project/Logos/SunwingLogos/NewSunwingLogo-white.svg" alt="Sunwing Logo">
-    </div>
-    <div class="right">📦 Book Early = FREE Checked Bag</div>
-  </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Flights</a></li>
+        <li><a href="#">Vacation Packages</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Navbar -->
-  <div class="navbar">
-    <div>Packages</div>
-    <div>Flights</div>
-    <div>Current offers</div>
-    <div>Hotels</div>
-  </div>
+  <main>
+    <h1>Welcome to Sunwing Airlines</h1>
+    <p>Book your next adventure with Sunwing today!</p>
+  </main>
 
-  <!-- Search Section -->
-  <div class="searchbar">
-    <label><input type="radio" name="trip" checked> Round trip</label>
-    <label><input type="radio" name="trip"> One way</label>
-    <select>
-      <option>Departing from</option>
-      <option>Toronto (YYZ)</option>
-    </select>
-    <select>
-      <option>Going to</option>
-    </select>
-    <input type="date" value="2025-09-05">
-    <input type="date" value="2025-09-12">
-    <select>
-      <option>2 Adults</option>
-      <option>1 Adult</option>
-      <option>3 Adults</option>
-    </select>
-    <button>Search</button>
-  </div>
-
-  <!-- Content Section -->
-  <div class="content">
-    <div class="content-text">
-      <h1>NOTHING BUT SUNNY SKIES AHEAD!</h1>
-      <p>
-        Whether you're looking to head off on a long-weekend adventure or fly south for a weeklong sun and sand escape, we offer a range of flight deals from gateways across Canada to any one of our sun-soaked destinations in Mexico, Central America and across the Caribbean. The sky really is the limit when you book with us!
-      </p>
-    </div>
-    <div>
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach">
-    </div>
-  </div>
-
+  <footer>
+    <p>&copy; 2025 Sunwing Airlines. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
