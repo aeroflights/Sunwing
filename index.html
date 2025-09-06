@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sunwing | Aeronautica</title>
-   <link rel="icon" type="image/x-icon" href="/SunwingAirlines.png">
+  <link rel="icon" type="image/x-icon" href="/SunwingAirlines.png">
   <style>
     body {
       margin: 0;
@@ -93,6 +93,46 @@
       width: 400px;
       border-radius: 10px;
     }
+
+    /* What we offer section */
+    .offers {
+      background: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .offers h2 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #222;
+    }
+
+    .offer-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .offer {
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+    }
+
+    .offer h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .offer p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+    }
   </style>
 </head>
 <body>
@@ -109,7 +149,7 @@
     </nav>
   </header>
 
-<div class="content">
+  <div class="content">
     <div class="content-text">
       <h1>NOTHING BUT SUNNY SKIES AHEAD!</h1>
       <p>
@@ -120,7 +160,26 @@
       <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach">
     </div>
   </div>
-  
+
+  <!-- What We Offer Section -->
+  <div class="offers">
+    <h2>WHAT WE OFFER:</h2>
+    <div class="offer-grid">
+      <div class="offer">
+        <h3>CUSTOMER SERVICE</h3>
+        <p>Our management staff is available most of the day to assist future pilots and current pilots with any questions or concerns. Quick responses are always guaranteed.</p>
+      </div>
+      <div class="offer">
+        <h3>EXCELLENT PAY</h3>
+        <p>We provide some of the best rewards in Aeronautica. Pilots earn generous pay per logged flight and enjoy bonuses that keep them motivated and happy.</p>
+      </div>
+      <div class="offer">
+        <h3>LUXURY TRANSPORT</h3>
+        <p>We ensure the most pleasant flying experience. Our open network allows pilots to travel freely while keeping comfort and safety as our top priorities.</p>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <p>&copy; 2025 Sunwing Airlines. All Rights Reserved.</p>
   </footer>
