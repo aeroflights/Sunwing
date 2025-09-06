@@ -6,62 +6,42 @@
   <title>Fleet - Sunwing Virtual</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #333;
     }
 
+    /* Header */
     header {
-      background-color: #ff6600;
-      padding: 10px 20px;
-    }
-
-    nav {
+      background: #ff6600;
+      padding: 15px 30px;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 30px;
     }
-
-    nav img {
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      max-width: 1200px;
+    }
+    header img {
       height: 40px;
     }
-
     nav ul {
       list-style: none;
-      margin: 0;
-      padding: 0;
       display: flex;
       gap: 20px;
+      margin: 0;
+      padding: 0;
     }
-
-    nav ul li {
-      display: inline;
-    }
-
-    nav ul li a {
+    nav a {
+      color: white;
       text-decoration: none;
-      color: white;
       font-weight: bold;
-      font-size: 16px;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #ffe6cc;
-    }
-
-    main {
-      padding: 20px;
-      text-align: center;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      margin-top: 20px;
     }
 
     /* Dropdown (accordion style) */
@@ -115,22 +95,32 @@
     .active .arrow {
       transform: rotate(90deg);
     }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <nav>
-      <img src="https://assets.sunwingtravelgroup.com/image/upload/v1614627905/sunwing-prod/Web%20Replatform%20Project/Logos/SunwingLogos/NewSunwingLogo-white.svg" alt="Sunwing Logo">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="fleet.html">Fleet</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Airline News</a></li>
-        <li><a href="#">Media</a></li>
-      </ul>
-    </nav>
+    <div class="header-inner">
+      <img src="https://assets.sunwingtravelgroup.com/image/upload/v1614627905/sunwing-prod/Web%20Replatform%20Project/Logos/SunwingLogos/NewSunwingLogo-white.svg" alt="Sunwing Virtual Logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fleet.html">Fleet</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Fleet Dropdowns -->
