@@ -12,6 +12,7 @@
       background-color: #f4f4f4;
     }
 
+    /* Header */
     header {
       background-color: #ff6600;
       padding: 10px 20px;
@@ -20,8 +21,9 @@
     nav {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 30px;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     nav img {
@@ -57,15 +59,6 @@
       text-align: center;
     }
 
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      margin-top: 20px;
-    }
-
-
     /* Dropdown (accordion style) */
     .dropdown {
       width: 80%;
@@ -75,6 +68,7 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       overflow: hidden;
     }
+
     .dropdown-header {
       display: flex;
       justify-content: space-between;
@@ -87,35 +81,52 @@
       user-select: none;
       transition: background 0.2s;
     }
+
     .dropdown-header:hover {
       background: #ddd;
     }
+
     .arrow {
       transition: transform 0.3s ease;
     }
+
     .dropdown-content {
       display: none;
       padding: 10px 20px;
       border-top: 1px solid #ccc;
       background: #fafafa;
     }
+
     .dropdown-content ul {
       margin: 0;
       padding: 0;
       list-style: none;
     }
+
     .dropdown-content li {
       padding: 8px 0;
       border-bottom: 1px solid #eee;
     }
+
     .dropdown-content li:last-child {
       border-bottom: none;
     }
+
     .active .dropdown-content {
       display: block;
     }
+
     .active .arrow {
       transform: rotate(90deg);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -126,7 +137,7 @@
     <nav>
       <img src="https://assets.sunwingtravelgroup.com/image/upload/v1614627905/sunwing-prod/Web%20Replatform%20Project/Logos/SunwingLogos/NewSunwingLogo-white.svg" alt="Sunwing Logo">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="fleet.html">Fleet</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Airline News</a></li>
