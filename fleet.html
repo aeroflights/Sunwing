@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunwing | Fleet</title>
+  <link rel="icon" type="image/x-icon" href="/SunwingAirlines.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #ff6600;
+      padding: 10px 20px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav img {
+      height: 40px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffe6cc;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    main {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    /* Dropdown styles */
+    .dropdown {
+      margin: 20px auto;
+      display: inline-block;
+      text-align: left;
+      position: relative;
+    }
+
+    .dropbtn {
+      background-color: #ff6600;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .dropbtn:hover {
+      background-color: #e65c00;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 220px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.2s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="https://assets.sunwingtravelgroup.com/image/upload/v1614627905/sunwing-prod/Web%20Replatform%20Project/Logos/SunwingLogos/NewSunwingLogo-white.svg" alt="Sunwing Logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Airline News</a></li>
+        <li><a href="#">Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Fleet</h1>
+
+    <!-- Passenger Dropdown -->
+    <div class="dropdown">
+      <button class="dropbtn">Passenger</button>
+      <div class="dropdown-content">
+        <a href="#">Boeing 737-800</a>
+        <a href="#">Airbus A321neo</a>
+        <a href="#">Boeing 787 Dreamliner</a>
+        <a href="#">Airbus A330-300</a>
+      </div>
+    </div>
+
+    <!-- Cargo Dropdown -->
+    <div class="dropdown">
+      <button class="dropbtn">Cargo</button>
+      <div class="dropdown-content">
+        <a href="#">Boeing 747-8F</a>
+        <a href="#">Airbus A330F</a>
+        <a href="#">McDonnell Douglas DC-10F</a>
+        <a href="#">Boeing 767-300F</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sunwing Airlines. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
